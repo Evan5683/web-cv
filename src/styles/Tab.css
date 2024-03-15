@@ -1,0 +1,11 @@
+/* Tab.css */
+.tab {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    /* 其他基础样式 */
+  }
+  
+  .tab.hover {
+    transform: scale(1.1); /* 放大 10% */
+  }
+  

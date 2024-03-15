@@ -1,0 +1,19 @@
+.card {
+  width: 80px;
+  /* 定义卡片宽度 */
+  height: 80px;
+  /* 定义卡片高度 */
+  margin: 5px;
+  /* 给每张卡片一些间距 */
+  border: 1px solid black;
+  /* 定义卡片边框 */
+  /* 其他你想要的样式，例如阴影、颜色等 */
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  /* 100px (卡片宽度) * 4 + 5px (间距) * 8 */
+  /* 这里使用了420px，因为每张卡片的宽度为100px并且有5px的间距 */
+}

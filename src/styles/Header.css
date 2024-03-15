@@ -1,0 +1,40 @@
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  width: 100%; /* 确保导航占满整个宽度 */
+  box-sizing: border-box; /* padding 和 border 会被包含在宽度内 */
+  padding: 0 23%; /* 根据需要调整这里的值 */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between; /* 保持标题分散对齐 */
+  padding: 0; /* 移除默认的 padding */
+  list-style-type: none; /* 移除 li 的圆点 */
+  margin: 0; /* 移除默认的 margin */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  /* 其他基础样式，比如 padding, font-size 等 */
+}
+
+.link:hover {
+  transform: scale(1.2); /* 放大 10% */
+}
+
+@media (max-width: 768px) {
+  .nav-item a {
+    font-size: 0.8em; /* 在小屏幕上进一步减小字体大小 */
+  }
+}

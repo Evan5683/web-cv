@@ -1,0 +1,68 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style the header section */
+header {
+    background-color: #50b3a2;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the main content section */
+main {
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+/* Style the footer section */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #50b3a2;
+    color: white;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f0f0f0;
+}
+
+#profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
