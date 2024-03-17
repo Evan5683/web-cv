@@ -1,39 +1,87 @@
 .slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    /* Adjust as needed */
-    width: 1300px;
-    /* Adjust as needed */
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  /* Adjust as needed */
+  width: 1300px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .project-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background: #f5f5f5;
-    transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  transition: transform 0.3s;
 }
 
 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    padding: 10px 20px;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 button:nth-child(1) {
-    left: 10px;
+  left: 10px;
 }
 
 button:nth-child(3) {
-    right: 10px;
+  right: 10px;
+}
+
+.navigation {
+  position: fixed; /* 固定位置，滚动时导航栏保持不动 */
+  top: 0; /* 顶部对齐 */
+  left: 0; /* 左侧对齐 */
+  height: 100vh; /* 使导航栏的高度占满整个视口高度 */
+  width: 200px; /* 导航栏的宽度 */
+  background-color: rgb(255, 255, 255, 0); /* 导航栏背景颜色 */
+  color: white; /* 文字颜色 */
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 项目垂直排列 */
+  align-items: start; /* 项目靠左对齐 */
+  padding: 20px; /* 内边距 */
+  justify-content: center; /* 添加这行代码 */
+  box-sizing: border-box; /* 防止内边距影响宽度 */
+}
+
+.navigation a {
+  color: #61dafb; /* 链接颜色 */
+  padding: 10px 0; /* 链接的上下内边距 */
+  margin: 20px 0; /* 链接的上下外边距 */
+  text-decoration: none; /* 去除下划线 */
+  width: 100%; /* 使链接占满整个导航栏宽度 */
+  box-sizing: border-box; /* 防止内边距影响宽度 */
+}
+
+.element {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navigation a.active {
+  background-color: #61dafb; /* 激活链接的背景颜色 */
+  color: #282c34; /* 激活链接的文字颜色 */
+}
+
+.navigation a:hover {
+  background-color: #ffffff; /* 鼠标悬浮时的背景颜色 */
+  color: #282c34; /* 鼠标悬浮时的文字颜色 */
+}
+
+.main-content {
+  margin-left: 200px; /* 根据导航栏宽度调整 */
 }

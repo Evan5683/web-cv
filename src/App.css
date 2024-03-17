@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/abstract-waves_XYBLVEGDJM.jpg");
+  background-size: cover; /* 覆盖整个页面 */
+  background-position: center; /* 从中心开始显示 */
+  background-attachment: fixed; /* 使背景图像固定 */
+}

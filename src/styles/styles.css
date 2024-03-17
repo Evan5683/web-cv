@@ -4,65 +4,77 @@ h1,
 h2,
 ul,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set a background color */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/abstract-waves_XYBLVEGDJM.jpg"); /* 替换为你的图片路径 */
+  background-size: cover; /* 使背景图片覆盖整个页面 */
+  background-position: center; /* 背景图片居中显示 */
+  background-attachment: fixed; /* 背景图像固定 */
 }
 
 /* Style the header section */
 header {
-    background-color: #50b3a2;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
+  background-color: #50b3a2;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
 }
 
 /* Style the navigation menu */
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Style the main content section */
 main {
-    margin: 15px;
-    padding: 15px;
-    background-color: white;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
 }
 
 /* Style the footer section */
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #50b3a2;
-    color: white;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #50b3a2;
+  color: white;
 }
 
 #home {
-    text-align: center;
-    padding: 100px 0;
-    background-color: #f0f0f0;
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f0f0f0;
 }
 
 #profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header,
+.footer,
+main {
+  background-color: rgba(255, 255, 255, 0.2); /* 白色背景，50% 透明度 */
+  /* 其他样式 */
 }
